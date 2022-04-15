@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from functools import partial
 from tkinter import ttk
+import tkinter
 import uuid
 import pyperclip
 import base64
@@ -207,7 +208,10 @@ def vaultScreen():
             btn = Button(window, text="Copy", command=copyPw)
             btn.grid(pady=5)
 
-    window.geometry('750x500')
+    def info():
+        tkinter.messagebox.showinfo(title="information", message="Autoatic generate password from 15 char")
+
+    window.geometry('800x550')
     notebook = ttk.Notebook(window)
     window.resizable(height=None, width=None)
     lbl = Label(window, text="Password Vault",anchor=CENTER)
@@ -217,11 +221,14 @@ def vaultScreen():
    
     notebook.grid()
 
-    btn = Button(window, text="Add Information", command=addEntry)
+    btn = Button(window, text="Add Information", command=info)
     btn.grid(column=0 ,row=0)
 
-    btn = Button(window, text="GeneratePassword", command=passwordGenerator)
+    btn = Button(window, text="PwGenerator", command=passwordGenerator)
     btn.grid(column=2 ,row=1)
+    btn = Button(window, text="?", command=info)
+    btn.grid(column=3 ,row=1)
+
 
     lbl = Label(tab1, text="Website")
     lbl.grid(row=2, column=0, padx=80)
