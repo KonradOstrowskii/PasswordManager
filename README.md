@@ -1,6 +1,5 @@
 # PasswordManager
 This password manager allows you to save the page, user and password, then it hashes and saves them into the database.
-It also got password generator which generate password from 15 random ascii characters.
 
 With first login User need too choose  Master Pasword , and will  get RecoveryKey in case Master Password is gone.
 
