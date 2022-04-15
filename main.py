@@ -221,7 +221,7 @@ def vaultScreen():
    
     notebook.grid()
 
-    btn = Button(window, text="Add Information", command=info)
+    btn = Button(window, text="Add Information", command=addEntry)
     btn.grid(column=0 ,row=0)
 
     btn = Button(window, text="PwGenerator", command=passwordGenerator)
