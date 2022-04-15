@@ -9,9 +9,8 @@ import base64
 from popUp import *
 from datebase import *
 from hash import *
+import random
 
-
-#Initiate window
 window = Tk()
 window.update()
 
