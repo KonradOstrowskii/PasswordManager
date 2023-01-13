@@ -20,4 +20,9 @@ It also got password generator which generate password from 15 random ASCII char
 ![image](https://user-images.githubusercontent.com/97406457/163604254-01ecb636-4a26-4628-9c99-6ccc05882369.png)
 
 
+# Preconditions
+
+pip install cryptography
+pip install pyperclip
+
 
