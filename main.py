@@ -56,7 +56,7 @@ def firstTimeScreen():
 
             recoveryScreen(key)
         else:
-            lbl.config(text="Passwords aint correct")
+            lbl.config(text="Passwords ain't correct")
 
     btn = Button(window, text="Save", command=savePassword)
     btn.pack(pady=5)
